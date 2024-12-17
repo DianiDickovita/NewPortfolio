@@ -1,0 +1,61 @@
+.contact-page{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    width: 100%;
+    display: flex;
+    background-color: #F1FAFB;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page-topic{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;  
+
+}
+
+.contact-page-content{
+    display: flex;
+    width: 60%;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+
+
+}
+.contact-email,
+.contact-call,
+.contact-linkedin{
+    flex: 1;
+    background-color: #9DC6FF;
+    margin: 3%;
+    padding: 3%;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
+.contact-email div,
+.contact-call div,
+.contact-linkedin div {
+    text-align: center;
+    margin: 0 10px;
+  }
+.contact-email span,
+.contact-call span,
+.contact-linkedin span{
+    padding-left: 10px;
+}
+
+
+.footer{
+    background-color: rgb(232, 239, 241);
+    display: flex;
+    justify-content: center;
+}

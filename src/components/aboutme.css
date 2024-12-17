@@ -1,0 +1,90 @@
+.about-page {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(232, 239, 241);
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .about-page-text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+  }
+  
+  .about-page-image {
+    flex: 1; 
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .about-page-text {
+    margin-right: 10px;
+    border-right: 2px solid #fff; 
+    padding-right: 10px;
+  }
+  
+  .about-page-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50px;
+  }
+
+  .about-page-text-topic{
+    color: black;
+    font-family: 'Italiana', sans-serif;
+    font-size: 22px;
+  }
+
+  .about-page-text-education{
+    background-color: #9DC6FF;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 18%;
+    margin-top: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid #ddd;
+  }
+
+  .about-page-text-description{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .about-page {
+      flex-direction: row;
+    }
+  
+    .about-page-text {
+      margin-right: 10px;
+      border-right: 2px solid #fff;
+      padding-right: 10px;
+    }
+  
+    .about-page-image {
+      margin-bottom: 0;
+    }
+  
+    .about-page-image img{
+      max-width: 50%;
+      height: auto;
+      border-radius: 50px;
+    }
+  }
+
+  

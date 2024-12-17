@@ -1,0 +1,48 @@
+.experience-page{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    width: 100%;
+    display: flex;
+    background-color: #F1FAFB;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-page-topic{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;  
+
+}
+
+.experience-page-content{
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.experience-frontend-development,
+.experience-backend-development{
+    flex: 1;
+    background-color: #9DC6FF;
+    margin: 3%;
+    padding: 3%;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.experience-frontend-development li,
+.experience-backend-development li{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.images{
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
