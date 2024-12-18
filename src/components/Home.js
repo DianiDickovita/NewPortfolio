@@ -13,7 +13,7 @@ export default function Home() {
             </div>
             <div className="home-page-name">
                 <span className='home-page-name-hello'>
-                    Hello, I'm
+                    Hi, I'm
                 </span>
                 <span className='home-page-name-name'>
                     <b>Diani Dickovita</b>
