@@ -11,38 +11,109 @@
 
 .experience-page-topic{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;  
+    font-size: 30px;
+    text-align: center;
+}
 
+.experience-page-body {
+    width: 90%;
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.experience-page-body p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .experience-page-content{
     display: flex;
-    width: 50%;
-    font-size: 20px;
+    flex-direction: column;
+    width: 90%;
+    font-size: 18px;
     flex-wrap: wrap;
     margin: auto;
-
 }
+
 .experience-frontend-development,
-.experience-backend-development{
-    flex: 1;
+.experience-backend-development {
     background-color: #9DC6FF;
-    margin: 3%;
-    padding: 3%;
+    margin: 10px 0;
+    padding: 15px;
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-    
-}
-.experience-frontend-development li,
-.experience-backend-development li{
-    font-family: 'Josefin Sans', sans-serif;
 }
 
-.images{
-    width: 50px;
-    height: 50px;
-    margin: 2px;
+.experience-frontend-development ul,
+.experience-backend-development ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.experience-frontend-development li,
+.experience-backend-development li {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px 0;
+}
+
+.images {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .experience-page-body {
+        width: 70%;
+    }
+
+    .experience-page-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .experience-frontend-development,
+    .experience-backend-development {
+        flex: 1;
+        margin: 15px;
+    }
+
+    .images {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .experience-page-topic {
+        font-size: 24px;
+    }
+
+    .experience-page-body {
+        padding: 10px;
+    }
+
+    .experience-page-body p {
+        font-size: 14px;
+    }
+
+    .experience-frontend-development,
+    .experience-backend-development {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .images {
+        width: 30px;
+        height: 30px;
+    }
+
+    .experience-page-body img {
+        width: 100px;
+        height: auto;
+    }
 }

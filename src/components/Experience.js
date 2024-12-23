@@ -35,8 +35,8 @@ export default function Experience() {
             </div> */}
 
             
-            <div style={{ padding: '10px', paddingLeft: '200px', paddingRight: '200px' }}>
-                <span style={{ fontSize: '20px' }}>
+            <div className='experience-page-body'>
+                <span style={{ fontSize: '18px' }}>
                     <b><i>One Year Industrial Experience</i></b>
                     <b><i>at Ceylon Linux (Pvt) Ltd</i></b>
                 </span>
@@ -44,7 +44,7 @@ export default function Experience() {
                 <p style={{ fontSize: '18px', marginTop: '10px' }}>
                     During my one year at Ceylon Linux (Pvt) Ltd, I contributed as a Software Engineer Intern and subsequently as a Software Developer. 
                     The company specializes in Sales Force Automation Systems (SFA), and I actively worked on projects for clients like Darley Butler, Lakmee, 
-                    Suwanda,Siddhalepa,Maliban,Emerchemie, NBC, JAT, and CW Mackie PLC. My role involved full-stack development, where I:
+                    Suwanda, Siddhalepa, Maliban, Emerchemie, NBC, JAT, and CW Mackie PLC. My role involved full-stack development, where I:
                     <ul style={{ marginLeft: '20px' }}>
                         <li>Developed and optimized complex reports, improving their accuracy and performance.</li>
                         <li>Designed and implemented database structures and CRUD operations for efficient data management.</li>

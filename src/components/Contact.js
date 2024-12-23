@@ -12,7 +12,7 @@ export default function Contact() {
     <Element name='contact'>
       <div className="contact-page">
             <div className="contact-page-topic">
-                <b>Talk to Me</b>
+                <b>Contact</b>
             </div>
 
             <div className="contact-page-content">
