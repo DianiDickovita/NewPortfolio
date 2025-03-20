@@ -3,7 +3,8 @@
     padding-bottom: 8%;
     width: 100%;
     display: flex;
-    background-color: #F1FAFB;
+    /* background-color: #F1FAFB; */
+    background: linear-gradient(100deg, #1a1a1a, #1e1d48); /* Gradient dark background */
     flex-direction: column; 
     justify-content: center;
     align-items: center;

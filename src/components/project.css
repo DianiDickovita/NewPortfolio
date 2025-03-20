@@ -3,7 +3,8 @@
     padding-bottom: 6%;
     width: 100%;
     display: flex;
-    background-color: rgb(232, 239, 241);
+    /* background-color: rgb(232, 239, 241); */
+    background: linear-gradient(140deg, #1e1d48, #1a1a1a); /* Gradient dark background */
     flex-direction: column; 
     justify-content: center;
     align-items: center;
@@ -12,6 +13,7 @@
 .project-page-topic{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;  
+    color: aliceblue;
 
 }
 

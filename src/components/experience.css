@@ -7,12 +7,16 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+    background: linear-gradient(100deg, #1a1a1a, #1e1d48); /* Gradient dark background */
+
 }
 
 .experience-page-topic{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
     text-align: center;
+    color: #F1FAFB;
+
 }
 
 .experience-page-body {
@@ -21,6 +25,7 @@
     font-size: 16px;
     text-align: justify;
     font-family: 'Josefin Sans', sans-serif;
+    color: #F1FAFB;
 }
 
 .experience-page-body p {
@@ -46,6 +51,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .experience-frontend-development ul,
