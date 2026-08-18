@@ -1,148 +1,110 @@
-/* General Styles */
 .home-page {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  width: 100%;
+  padding: 120px 8% 80px 8%;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(140deg, #1a1a1a, #1e1d48); /* Gradient dark background */
+  background: linear-gradient(135deg, #0f172a 0%, #1e1d48 100%);
   color: #ffffff;
-  /* min-height: 100vh; */
   text-align: center;
-  overflow: hidden;
 }
 
-/* Profile Image */
 .home-page-image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  /* width: 220px; */
-  /* height: 220px; */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4993FA;
-  margin-bottom: 30px;
-  box-shadow: 0 0 20px rgba(73, 147, 250, 0.5); /* Glow effect */
+  border: 3px solid #38bdf8;
+  margin-bottom: 25px;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-page-image img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 0 30px rgba(73, 147, 250, 0.8); /* Stronger glow on hover */
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.5);
 }
 
-/* Name and Details */
 .home-page-name {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2rem;
 }
 
 .home-page-name-hello {
-  font-size: 1.5rem;
-  color: #4993FA;
-  margin-bottom: 10px;
-  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  font-size: 1.25rem;
+  color: #38bdf8;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
 .home-page-name-name {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.2rem;
+  font-weight: 700;
   margin-bottom: 10px;
-  background: linear-gradient(90deg, #4993FA, #6ac5f4); /* Gradient text */
+  background: linear-gradient(90deg, #ffffff, #38bdf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeIn 1s ease-in-out; /* Slide-in animation */
 }
 
 .home-page-name-position {
-  font-size: 1.2rem;
-  color: #cccccc;
-  margin-bottom: 30px;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  font-size: 1.4rem;
+  color: #94a3b8;
+  margin-bottom: 25px;
 }
 
-/* Download CV Button */
-.home-page-name button {
-  background-color: #4993FA;
-  color: #ffffff;
+.cv-button {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
   font-size: 1rem;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
 }
 
-.home-page-name button:hover {
-  background-color: #357ABD;
-  transform: translateY(-3px); /* Lift effect on hover */
+.cv-button:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Social Icons */
 .home-page-social-icons {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
-  gap: 20px; /* Space between icons */
+  gap: 20px;
 }
 
 .home-page-social-icons a {
-  color: #ffffff;
-  font-size: 2.0rem;
+  color: #94a3b8;
+  font-size: 1.8rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .home-page-social-icons a:hover {
-  color: #4993FA;
-  transform: translateY(-5px); /* Lift effect on hover */
+  color: #38bdf8;
+  transform: translateY(-3px);
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-      transform: translateX(-100%);
-      opacity: 0;
-  }
-  to {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}
-
-/* Responsive Design */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .home-page {
-      flex-direction: row;
-      text-align: left;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    gap: 60px;
   }
 
-  .home-page-image {
-      margin-right: 50px;
-      margin-bottom: 0;
+  .home-page-image img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 0;
   }
 
   .home-page-name {
-      font-size: 2.5rem;
-  }
-
-  .home-page-name-name {
-      font-size: 4rem;
-  }
-
-  .home-page-name-position {
-      font-size: 1.5rem;
+    align-items: flex-start;
   }
 }

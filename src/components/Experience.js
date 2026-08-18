@@ -1,119 +1,124 @@
-import React from 'react'
-import './experience.css'
+import React from 'react';
+import './experience.css';
 import { Element } from 'react-scroll';
 
 export default function Experience() {
   return (
-    <Element name='experience'>
-        <div className="experience-page">
-            <div className="experience-page-topic">
-                <b>Experience</b>
-            </div>
+    <Element name="experience">
+      <div className="experience-page">
+        <div className="experience-page-topic">Work Experience (2.5+ Years)</div>
 
-            {/* <div style={{ padding: '10px',paddingLeft:'200px', paddingRight:'200px' }}>
+        {/* Elevex Technologies */}
+        <div className="experience-card">
+          <div className="experience-header">
+            <h3>Software Engineer - Full Stack</h3>
+            <span className="experience-company">Elevex Technologies Pvt Ltd | Jun 2024 – Present</span>
+          </div>
 
-                <span style={{ fontSize: '20px'}}><b><i>One Year Industrial Experience</i></b></span>
-                <span style={{ fontSize: '20px'}}><b><i> at  Ceylon Linux (Pvt) Ltd</i></b></span>
+          <ul className="experience-list">
+            <li>Independently designed, developed, tested, and deployed 500+ RESTful APIs and full-stack feature modules applying OOP/SOLID principles, design patterns, and MVC architecture.</li>
+            <li>Conducted root cause analysis to independently resolve 800+ production incidents across live client environments serving 20+ corporate clients.</li>
+            <li>Built and maintained real-time system integration APIs to synchronize data between two business platforms in production.</li>
+            <li>Optimized MySQL queries and indexing, improving report-generation performance by 75% (reducing execution time from 12s to under 3s).</li>
+            <li>Wrote unit tests and collaborated closely with QA on integration testing to maintain code quality and coverage.</li>
+            <li>Managed code delivery via Git-based branching workflows and GitLab CI/CD pipelines across Dev, QA, and Production environments.</li>
+            <li>Mentored junior engineers on established development and support practices, participating in code reviews to uphold quality standards.</li>
+          </ul>
 
-                <p style={{ fontSize: '18px'}}>
-                During my internship as a Software Engineer at Ceylon Linux (Pvt) Ltd, 
-                a product-based software company specializing in Sales Force Automation Systems (SFA), 
-                I worked extensively on several projects including Darley Butler, 
-                Lakmee, Suwanda, NBC, JAT, and CW Mackie PLC. I demonstrated proficiency in 
-                full-stack software development, creating new reports and features to enhance 
-                data analysis capabilities. My contributions also included fixing issues, developing and 
-                optimizing report exports, and improving functionality across various projects, showcasing 
-                my dedication to delivering high-quality software solutions.</p>
-                <p style={{ fontSize: '18px'}}>
-                Technologies Used:<b> Laravel, CodeIgniter, MySQL, Vue.js, Postman, GitLab, Linux environment</b>.
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                    <img src={process.env.PUBLIC_URL + '/of.png'} alt='image' style={{ width:'200px'}}/>
-                    <img src={process.env.PUBLIC_URL + '/logo.png'} alt='image' style={{ height:'150px'}}/>
-                </div>
-
-            </div> */}
-
-            
-            <div className='experience-page-body'>
-                <span style={{ fontSize: '18px' }}>
-                    <b><i>One Year Industrial Experience</i></b>
-                    <b><i>at Ceylon Linux (Pvt) Ltd</i></b>
-                </span>
-
-                <p style={{ fontSize: '18px', marginTop: '10px' }}>
-                    During my one year at Ceylon Linux (Pvt) Ltd, I contributed as a Software Engineer Intern and subsequently as a Software Developer. 
-                    The company specializes in Sales Force Automation Systems (SFA), and I actively worked on projects for clients like Darley Butler, Lakmee, 
-                    Suwanda, Siddhalepa, Maliban, Emerchemie, NBC, JAT, and CW Mackie PLC. My role involved full-stack development, where I:
-                    <ul style={{ marginLeft: '20px' }}>
-                        <li>Developed and optimized complex reports, improving their accuracy and performance.</li>
-                        <li>Designed and implemented database structures and CRUD operations for efficient data management.</li>
-                        <li>Developed several APIs for GET and POST requests to retrieve data from the database and insert data into the database for the app.</li>
-                        <li>Resolved critical software issues, ensuring system reliability and stability.</li>
-                        <li>Enhanced application performance by reducing report load times and improving processing efficiency.</li>
-                    </ul>
-                </p>
-                <p style={{ fontSize: '18px', marginTop: '10px' }}>
-                    <b>Technologies Used:</b> Laravel, CodeIgniter, MySQL, Vue.js, Postman, GitLab, and Linux environment.
-                </p>
-
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-                    <img src={process.env.PUBLIC_URL + '/of.png'} alt="Project Image 1" style={{ width: '200px' }} />
-                    <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Project Image 2" style={{ height: '150px' }} />
-                </div>
-            </div> 
-           
-
-
-
-
-            <span style={{paddingTop:'50px'}} className="experience-page-topic" ><b>Experience with Languages</b></span>
-            <div className="experience-page-content">
-                <div className="experience-frontend-development">
-                    <span>Frontend Development</span>
-                    <ul>
-                        <li>React</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Vue.js</li>
-
-                    </ul>
-                </div>
-                <div className="experience-backend-development">
-                    <span>Backend Development</span>
-                    <ul>
-                        <li>Java</li>
-                        <li>PHP</li>
-                        <li>Springboot</li>
-                        <li>Laravel</li>
-                        <li>CodeIgniter</li>
-                    </ul>
-                </div>
-                <div className="experience-backend-development">
-                    <span>Database</span>
-                    <ul>
-                        <li>MySQL</li>
-
-                    </ul>
-                </div>
-            </div>
-            <span >
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" className='images'/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" className='images'/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" className='images'/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" className='images'/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" className='images'/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" className='images'/>
-                <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" className='images'/> 
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" className='images'/>
-            </span>
-            <span>
-                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" className='images'/>
-                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" className='images'/>
-            </span>
+          <p className="tech-stack-p">
+            <strong>Technologies:</strong> Laravel, Vue.js, PHP, MySQL, RESTful APIs, Git, GitLab CI/CD, Agile/Scrum
+          </p>
         </div>
-      
+
+        {/* Ceylon Linux */}
+        <div className="experience-card">
+          <div className="experience-header">
+            <h3>Software Engineer Intern</h3>
+            <span className="experience-company">Ceylon Linux (Pvt) Ltd | Dec 2023 – May 2024</span>
+          </div>
+
+          <ul className="experience-list">
+            <li>Built software modules for internal web applications using PHP, applying MVC principles to reporting dashboards and data entry features.</li>
+            <li>Analyzed and optimized complex SQL queries across application modules to improve production database performance.</li>
+            <li>Collaborated with senior engineers on debugging and root cause analysis, participating in Git-based code reviews.</li>
+          </ul>
+
+          <p className="tech-stack-p">
+            <strong>Technologies:</strong> PHP, MySQL, MVC Architecture, Git, Web Application Development
+          </p>
+        </div>
+
+        {/* Academic & Personal Projects */}
+        <div className="experience-page-topic">Featured Projects</div>
+
+        <div className="projects-grid">
+          <div className="project-card">
+            <h4>Band Artist Management System</h4>
+            <p className="project-tech">Spring Boot · React.js · MySQL</p>
+            <p>Architected a full-stack system end-to-end, applying OOP/MVC design principles with secure, role-based session authentication and a normalized MySQL schema.</p>
+          </div>
+
+          <div className="project-card">
+            <h4>Gym Social Media Platform</h4>
+            <p className="project-tech">Java Spring Boot · React.js · MySQL</p>
+            <p>Independently designed and built a full-stack social platform, implementing authentication, relational data modeling, and REST APIs for client-server communication.</p>
+          </div>
+
+          <div className="project-card">
+            <h4>Library Management System</h4>
+            <p className="project-tech">Java · MySQL</p>
+            <p>Collaborated in a 5-person team, contributing to a secure authentication module and a request-management workflow via an admin dashboard.</p>
+          </div>
+        </div>
+
+        {/* Technical Skills */}
+        <div className="experience-page-topic">Technical Skills</div>
+
+        <div className="skills-grid">
+          <div className="skill-category">
+            <h4>Languages & Frameworks</h4>
+            <ul>
+              <li>PHP (Laravel)</li>
+              <li>Java (Spring Boot)</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Vue.js</li>
+              <li>React.js</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h4>Engineering & Practice</h4>
+            <ul>
+              <li>OOP & SOLID Principles</li>
+              <li>Design Patterns & MVC</li>
+              <li>RESTful API Design</li>
+              <li>Unit Testing & QA</li>
+              <li>Root Cause Analysis</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h4>Databases & DevOps</h4>
+            <ul>
+              <li>MySQL (Schema & Indexing)</li>
+              <li>Git / GitLab / GitHub</li>
+              <li>GitLab CI/CD</li>
+              <li>Agile / Scrum</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="tech-icons-container">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" className="tech-icon" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="Vue.js" className="tech-icon" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" className="tech-icon" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" className="tech-icon" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg" alt="Laravel" className="tech-icon" />
+          <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring" className="tech-icon" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" className="tech-icon" />
+          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" className="tech-icon" />
+        </div>
+      </div>
     </Element>
-  )
+  );
 }

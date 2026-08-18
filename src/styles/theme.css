@@ -1,0 +1,12 @@
+:root {
+  --bg-dark-primary: #0f172a;
+  --bg-dark-secondary: #1e293b;
+  --accent-color: #38bdf8;
+  --accent-hover: #0284c7;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --text-main: #f8fafc;
+  --text-sub: #94a3b8;
+  --font-heading: 'Inter', Arial;
+  --font-body: 'Inter', Arial;
+}
