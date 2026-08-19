@@ -49,7 +49,7 @@ export default function Experience() {
         </div>
 
         {/* Academic & Personal Projects */}
-        <div className="experience-page-topic">Featured Projects</div>
+        {/* <div className="experience-page-topic">Featured Projects</div>
 
         <div className="projects-grid">
           <div className="project-card">
@@ -69,7 +69,7 @@ export default function Experience() {
             <p className="project-tech">Java · MySQL</p>
             <p>Collaborated in a 5-person team, contributing to a secure authentication module and a request-management workflow via an admin dashboard.</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Technical Skills */}
         <div className="experience-page-topic">Technical Skills</div>
